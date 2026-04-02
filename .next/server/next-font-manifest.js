@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/emma/maya-landing/app/layout\":[\"static/media/99e31c27a1524300-s.p.woff2\",\"static/media/0a86735c6520d94f-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
