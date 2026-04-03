@@ -1,3 +1,5 @@
+import { WA_PRIMARY } from '@/lib/whatsapp'
+
 const notForYou = [
   'אם אין לך פניות בכלל, זה לא רלוונטי.',
   'אם אתה כבר עונה לכל שיחה תוך שניות, כנראה שאתה לא צריך את זה.',
@@ -69,7 +71,7 @@ export default function RiskReversal() {
             </div>
 
             <a
-              href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי"
+              href={WA_PRIMARY}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full justify-center"

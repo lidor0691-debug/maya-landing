@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { WA_PRIMARY } from '@/lib/whatsapp'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ export default function Navbar() {
             <a href="#how-it-works" className="text-gray-400 hover:text-white text-sm font-medium transition-colors">איך זה עובד</a>
             <a href="#use-cases" className="text-gray-400 hover:text-white text-sm font-medium transition-colors">מקרי שימוש</a>
             <a href="#pricing" className="text-gray-400 hover:text-white text-sm font-medium transition-colors">מחירים</a>
-            <a href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי" target="_blank" rel="noopener noreferrer" className="btn-primary !py-2.5 !px-6 !text-base">
+            <a href={WA_PRIMARY} target="_blank" rel="noopener noreferrer" className="btn-primary !py-2.5 !px-6 !text-base">
               התחל עכשיו
             </a>
           </div>
@@ -44,7 +45,7 @@ export default function Navbar() {
             <a href="#how-it-works" onClick={() => setOpen(false)} className="text-gray-300 hover:text-white font-medium py-2 transition-colors">איך זה עובד</a>
             <a href="#use-cases" onClick={() => setOpen(false)} className="text-gray-300 hover:text-white font-medium py-2 transition-colors">מקרי שימוש</a>
             <a href="#pricing" onClick={() => setOpen(false)} className="text-gray-300 hover:text-white font-medium py-2 transition-colors">מחירים</a>
-            <a href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="btn-primary w-full text-center">
+            <a href={WA_PRIMARY} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="btn-primary w-full text-center">
               התחל עכשיו
             </a>
           </div>

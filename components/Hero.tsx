@@ -1,3 +1,5 @@
+import { WA_PRIMARY, WA_SECONDARY } from '@/lib/whatsapp'
+
 export default function Hero() {
   return (
     <section className="section-dark pt-32 pb-24 relative overflow-hidden">
@@ -22,25 +24,30 @@ export default function Hero() {
             מאיה עונה מיד, ממשיכה את השיחה, וקובעת את הצעד הבא גם כשאתה עסוק.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-3">
             <a
-              href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי"
+              href={WA_PRIMARY}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full sm:w-auto"
             >
-              בדוק איך זה יעבוד אצלך בעסק
+              בדוק אם זה מתאים לעסק שלך
               <svg className="w-5 h-5 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#how-it-works" className="text-gray-400 hover:text-white text-base font-medium transition-colors underline underline-offset-4">
-              קודם תסביר לי איך זה עובד
+            <a
+              href={WA_SECONDARY}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-base font-medium transition-colors underline underline-offset-4"
+            >
+              יש לי שאלה
             </a>
           </div>
 
           <p className="text-gray-500 text-sm">
-            ללא התחייבות. בדיקה קצרה אם זה באמת מתאים לך.
+            לוקח פחות מדקה למלא. ללא התחייבות.
           </p>
         </div>
 

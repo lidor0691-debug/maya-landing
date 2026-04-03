@@ -1,3 +1,5 @@
+import { WA_PRIMARY } from '@/lib/whatsapp'
+
 const plans = [
   {
     name: 'Starter',
@@ -112,7 +114,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי"
+                href={WA_PRIMARY}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full text-center rounded-xl py-3.5 font-bold text-base transition-all duration-200 ${
