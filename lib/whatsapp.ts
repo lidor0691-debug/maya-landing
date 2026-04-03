@@ -1,16 +1,9 @@
-const phone = '972524620550'
-const base = `https://wa.me/${phone}?text=`
+// HIGH-INTENT: full intake form pre-filled
+// Decoded: "היי, ראיתי את מאיה ורוצה לבדוק אם זה מתאים לעסק שלי.\n\nשם העסק:\nתחום:\nכמה פניות ביום בערך:\nמה קורה היום כשלקוח פונה ולא מקבל מענה:"
+export const WA_PRIMARY =
+  'https://wa.me/972524620550?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%90%D7%99%D7%94%20%D7%95%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%90%D7%9D%20%D7%96%D7%94%20%D7%9E%D7%AA%D7%90%D7%99%D7%9D%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99.%0A%0A%D7%A9%D7%9D%20%D7%94%D7%A2%D7%A1%D7%A7%3A%0A%D7%AA%D7%97%D7%95%D7%9D%3A%0A%D7%9B%D7%9E%D7%94%20%D7%A4%D7%A0%D7%99%D7%95%D7%AA%20%D7%91%D7%99%D7%95%D7%9D%20%D7%91%D7%A2%D7%A8%D7%9A%3A%0A%D7%9E%D7%94%20%D7%A7%D7%95%D7%A8%D7%94%20%D7%94%D7%99%D7%95%D7%9D%20%D7%9B%D7%A9%D7%9C%D7%A7%D7%95%D7%97%20%D7%A4%D7%95%D7%A0%D7%94%20%D7%95%D7%9C%D7%90%20%D7%9E%D7%A7%D7%91%D7%9C%20%D7%9E%D7%A2%D7%A0%D7%94%3A'
 
-const primaryMessage = [
-  'היי, ראיתי את מאיה ורוצה לבדוק אם זה מתאים לעסק שלי.',
-  '',
-  'שם העסק:',
-  'תחום:',
-  'כמה פניות ביום בערך:',
-  'מה קורה היום כשלקוח פונה ולא מקבל מענה:',
-].join('\n')
-
-const secondaryMessage = 'היי, ראיתי את מאיה ויש לי שאלה'
-
-export const WA_PRIMARY = base + encodeURIComponent(primaryMessage)
-export const WA_SECONDARY = base + encodeURIComponent(secondaryMessage)
+// LOW-INTENT: simple question
+// Decoded: "היי, ראיתי את מאיה ויש לי שאלה"
+export const WA_SECONDARY =
+  'https://wa.me/972524620550?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%90%D7%99%D7%94%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94'
