@@ -130,6 +130,9 @@ export default function Pricing() {
         <p className="text-center text-gray-400 text-sm mt-10">
           המחיר הסופי נקבע לפי מה שבאמת צריך בעסק שלך. לא לפי חבילה מנופחת.
         </p>
+        <p className="text-center text-gray-500 text-sm mt-3">
+          לקוח אחד שלא הלך למתחרה יכול להחזיר את כל ההשקעה.
+        </p>
       </div>
     </section>
   )

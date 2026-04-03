@@ -52,6 +52,15 @@ export default function Problem() {
           </p>
           <p className="text-red-500 mt-3 font-medium">לא בגלל תחרות. כי לא ענו בזמן.</p>
         </div>
+
+        <div className="mt-6 bg-gray-900 rounded-2xl p-8 text-center">
+          <p className="text-brand-500 font-bold text-sm uppercase tracking-widest mb-4">חישוב מהיר</p>
+          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+            אם אתה מפספס רק <span className="text-white font-bold">3 פניות ביום</span> ובממוצע כל לקוח שווה <span className="text-white font-bold">₪300</span>
+          </p>
+          <p className="text-4xl sm:text-5xl font-black text-red-400 mb-3">₪27,000+</p>
+          <p className="text-gray-400">נעלמים לך כל חודש. בשקט.</p>
+        </div>
       </div>
     </section>
   )

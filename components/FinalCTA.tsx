@@ -16,11 +16,19 @@ export default function FinalCTA() {
           השאלה היא אם הוא יקבל מענה או ימשיך הלאה.
         </p>
 
-        <p className="text-gray-500 text-base max-w-lg mx-auto mb-12">
+        <p className="text-gray-500 text-base max-w-lg mx-auto mb-10">
           מאיה יכולה להתחיל לענות ללקוחות שלך כבר בימים הקרובים. כל יום שעובר בלעדיה, לידים הולכים לאיבוד.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="max-w-md mx-auto mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+          <p className="text-gray-300 text-base leading-relaxed">
+            אנחנו לא עובדים עם כל עסק.
+            <br />
+            <span className="text-white font-semibold">רק עם עסקים שיש להם כבר פניות ורוצים להפסיק לאבד אותן.</span>
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
           <a
             href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי"
             target="_blank"
@@ -33,6 +41,8 @@ export default function FinalCTA() {
             </svg>
           </a>
         </div>
+
+        <p className="text-gray-500 text-sm mb-8">לוקח פחות מדקה לשלוח הודעה.</p>
 
         <div className="flex flex-wrap gap-6 justify-center items-center">
           {[

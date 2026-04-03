@@ -56,6 +56,19 @@ export default function Agitation() {
           ))}
         </div>
 
+        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-14">
+          <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-5 text-center">
+            <p className="text-red-400 font-bold text-xs uppercase tracking-widest mb-2">עסקים רגילים</p>
+            <p className="text-white font-black text-2xl mb-1">15–60 דקות</p>
+            <p className="text-gray-400 text-sm">זמן מענה ממוצע לפנייה</p>
+          </div>
+          <div className="bg-brand-500/10 border border-brand-500/20 rounded-xl p-5 text-center">
+            <p className="text-brand-400 font-bold text-xs uppercase tracking-widest mb-2">מאיה</p>
+            <p className="text-white font-black text-2xl mb-1">2–5 שניות</p>
+            <p className="text-gray-400 text-sm">תמיד. גם ב-23:00.</p>
+          </div>
+        </div>
+
         <div className="text-center">
           <p className="text-2xl sm:text-3xl font-black text-white leading-snug">
             הבעיה היא לא שאתה עסוק.
