@@ -40,7 +40,7 @@ export default function Benefits() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { text: 'אין צורך בעוזרת אדמין' },
+            { text: 'פחות תלות בזמינות ידנית' },
             { text: 'אין הגדרה מסובכת' },
             { text: 'מתחיל לעבוד תוך 24 שעות' },
           ].map((item) => (

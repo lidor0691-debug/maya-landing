@@ -49,7 +49,7 @@ export default function Hero() {
             <span className="w-3 h-3 rounded-full bg-red-500/70" />
             <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
             <span className="w-3 h-3 rounded-full bg-green-500/70" />
-            <span className="text-gray-500 text-xs mr-3">שיחה עם מאיה. דוגמה אמיתית.</span>
+            <span className="text-gray-500 text-xs mr-3">הדמיה של שיחה עם מאיה</span>
           </div>
           <div className="relative bg-gray-900 aspect-video flex items-center justify-center">
             <div className="text-center px-8">
@@ -59,7 +59,7 @@ export default function Hero() {
                 </svg>
               </div>
               <p className="text-white font-semibold text-base mb-1">ככה זה נראה בפועל</p>
-              <p className="text-gray-500 text-sm">לא דמו יפה. שיחה אמיתית שממשיכה במקום שאתה לא עונה.</p>
+              <p className="text-gray-500 text-sm">הדמיה של שיחה שממשיכה במקום שאתה לא עונה.</p>
             </div>
           </div>
         </div>

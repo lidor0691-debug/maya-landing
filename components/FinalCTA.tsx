@@ -17,7 +17,7 @@ export default function FinalCTA() {
         </p>
 
         <p className="text-gray-500 text-base max-w-lg mx-auto mb-12">
-          מאיה יכולה להתחיל לעבוד אצלך תוך זמן קצר. כל יום שעובר בלעדיה, לידים הולכים לאיבוד.
+          מאיה יכולה להתחיל לענות ללקוחות שלך כבר בימים הקרובים. כל יום שעובר בלעדיה, לידים הולכים לאיבוד.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

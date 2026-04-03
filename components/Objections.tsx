@@ -24,9 +24,9 @@ export default function Objections() {
         <div className="text-center mb-16">
           <p className="text-brand-600 font-bold text-sm uppercase tracking-widest mb-3">שאלות נפוצות</p>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-4">
-            זה לא מתאים לכל אחד.
+            כמה שאלות ישירות.
             <br />
-            וזה בדיוק למה זה עובד.
+            כמה תשובות ישירות.
           </h2>
         </div>
 

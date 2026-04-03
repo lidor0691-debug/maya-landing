@@ -57,7 +57,7 @@ export default function Pricing() {
         <div className="text-center mb-16">
           <p className="text-brand-600 font-bold text-sm uppercase tracking-widest mb-3">מחירים</p>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-4">
-            השקעה שמחזירה את עצמה כבר בחודש הראשון
+            השקעה שבמקרים רבים מחזירה את עצמה מהר
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
             לפעמים כבר מהלקוח הראשון שלא הלך למתחרה.
