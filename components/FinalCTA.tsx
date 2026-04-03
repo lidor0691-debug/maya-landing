@@ -9,24 +9,25 @@ export default function FinalCTA() {
         <h2 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-6">
           ברגע שאתה מסיים לקרוא את זה,
           <br />
-          <span className="text-brand-500">מישהו ינסה להשיג אותך.</span>
+          <span className="text-brand-500">מישהו מנסה להשיג אותך.</span>
         </h2>
 
-        <p className="text-gray-300 text-xl leading-relaxed max-w-xl mx-auto mb-4">
-          השאלה היא אם הוא ידבר איתך,
-          <br />
-          או עם המתחרה שלך.
+        <p className="text-gray-300 text-xl leading-relaxed max-w-xl mx-auto mb-3">
+          השאלה היא אם הוא יקבל מענה או ימשיך הלאה.
         </p>
 
-        <p className="text-gray-400 text-lg max-w-xl mx-auto mb-12">
-          מאיה יכולה להתחיל לעבוד אצלך תוך זמן קצר.
-          <br />
-          השאלה היא רק כמה זמן עוד תמשיך לפספס לידים.
+        <p className="text-gray-500 text-base max-w-lg mx-auto mb-12">
+          מאיה יכולה להתחיל לעבוד אצלך תוך זמן קצר. כל יום שעובר בלעדיה, לידים הולכים לאיבוד.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <a href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי" target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto text-lg px-10 py-5">
-            קבל הדגמה מותאמת לעסק שלך
+          <a
+            href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary w-full sm:w-auto text-lg px-10 py-5"
+          >
+            שלח לי הודעה ונבדוק אם זה מתאים לעסק שלך
             <svg className="w-5 h-5 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

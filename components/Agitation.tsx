@@ -5,14 +5,21 @@ export default function Agitation() {
         <div className="text-center mb-14">
           <p className="text-brand-500 font-bold text-sm uppercase tracking-widest mb-3">למה זה קורה שוב ושוב</p>
           <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight mb-6">
-            זה לא כי אתה לא מקצועי.
+            זה לא שאתה לא טוב.
             <br />
-            <span className="text-gray-400">זה כי אין לך זמן להיות זמין כל היום.</span>
+            <span className="text-gray-400">זה שאין לך זמן להיות זמין כל היום.</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            אתה עובד, מדבר עם לקוחות, מטפל בעסק, רודף אחרי משימות.
-            <br />
-            בדיוק שם לידים נופלים בין הכיסאות.
+        </div>
+
+        <div className="max-w-2xl mx-auto mb-14 space-y-6 text-lg text-gray-300 leading-relaxed text-center">
+          <p>
+            אתה באמצע יום עבודה. לקוח מתקשר. מישהו שולח הודעה. עוד אחד רוצה לקבוע.
+          </p>
+          <p>
+            אתה אומר לעצמך שתחזור אליו עוד מעט.
+          </p>
+          <p className="text-white font-semibold text-xl">
+            אבל מבחינת הלקוח, עוד מעט זה מאוחר מדי.
           </p>
         </div>
 
@@ -20,19 +27,19 @@ export default function Agitation() {
           {[
             {
               label: 'אתה לא יכול לענות לכל שיחה',
-              sub: '',
+              sub: 'אתה עובד. אתה בפגישה. אתה עסוק.',
             },
             {
               label: 'אתה לא יכול להיות בוואטסאפ כל היום',
-              sub: '',
+              sub: 'ראית את ההודעה. לא הספקת לענות. הוא הלך.',
             },
             {
               label: 'אתה לא יכול לחזור לכל אחד מיד',
-              sub: '',
+              sub: 'ועד שאתה חוזר, הוא כבר בשיחה עם מישהו אחר.',
             },
             {
               label: 'אבל הלקוח עדיין מצפה לתגובה עכשיו',
-              sub: '',
+              sub: 'לא בעוד שעה. עכשיו.',
             },
           ].map((item) => (
             <div key={item.label} className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-5">
@@ -43,7 +50,7 @@ export default function Agitation() {
               </div>
               <div>
                 <p className="text-white font-semibold">{item.label}</p>
-                {item.sub ? <p className="text-gray-400 text-sm mt-1">{item.sub}</p> : null}
+                <p className="text-gray-400 text-sm mt-1">{item.sub}</p>
               </div>
             </div>
           ))}

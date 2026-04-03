@@ -12,24 +12,24 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-            פספסת שיחה?
+            כמה כסף העסק שלך מפסיד
             <br />
-            <span className="text-brand-500">הפסדת לקוח.</span>
+            <span className="text-brand-500">כי אין מי שעונה בזמן?</span>
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-300 font-medium leading-relaxed max-w-2xl mx-auto mb-4">
-            הלקוח לא מחכה לך. הוא עובר למתחרה הבא.
-            <br />
-            מאיה עונה במקומך, ממשיכה את השיחה, וקובעת את הצעד הבא.
-          </p>
-
-          <p className="text-lg text-gray-400 max-w-xl mx-auto mb-10">
-            גם כשאתה עסוק. גם כשאתה לא זמין. גם אחרי שעות הפעילות.
+          <p className="text-xl sm:text-2xl text-gray-300 font-medium leading-relaxed max-w-2xl mx-auto mb-10">
+            לקוח שלא מקבל מענה לא נשאר לחכות. הוא עובר לעסק הבא.
+            מאיה עונה מיד, ממשיכה את השיחה, וקובעת את הצעד הבא גם כשאתה עסוק.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
-            <a href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי" target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto">
-              תראה איך זה עובד אצלך בעסק
+            <a
+              href="https://wa.me/972524620550?text=היי,%20ראיתי%20את%20המערכת%20של%20מאיה%20ורוצה%20לבדוק%20איך%20זה%20יכול%20לעבוד%20אצלי"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full sm:w-auto"
+            >
+              בדוק איך זה יעבוד אצלך בעסק
               <svg className="w-5 h-5 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
 
           <p className="text-gray-500 text-sm">
-            בלי התחייבות. תוך כמה דקות תבין אם זה מתאים לעסק שלך או לא.
+            ללא התחייבות. בדיקה קצרה אם זה באמת מתאים לך.
           </p>
         </div>
 

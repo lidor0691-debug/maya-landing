@@ -4,6 +4,7 @@ import Problem from '@/components/Problem'
 import Agitation from '@/components/Agitation'
 import Solution from '@/components/Solution'
 import HowItWorks from '@/components/HowItWorks'
+import ProofSection from '@/components/ProofSection'
 import UseCases from '@/components/UseCases'
 import Benefits from '@/components/Benefits'
 import Objections from '@/components/Objections'
@@ -21,6 +22,7 @@ export default function Home() {
       <Agitation />
       <Solution />
       <HowItWorks />
+      <ProofSection />
       <UseCases />
       <Benefits />
       <Objections />

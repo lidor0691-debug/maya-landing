@@ -1,77 +1,56 @@
-const cases = [
+const industries = [
   {
-    industry: 'סטודיו / קליניקה',
-    pain: 'לקוח רוצה לקבוע בערב. לא מחכה למחר.',
-    result: 'מאיה קובעת תורים אוטומטית, שולחת אישורים ותזכורות. היומן מלא, בלי לרדוף אחרי אף אחד.',
-    quote: '"הפסקתי לבדוק וואטסאפ 20 פעם ביום. מאיה פשוט מסדרת את זה."',
-    who: 'ענת, סטודיו לפילאטיס',
+    title: 'קליניקות ורופאים',
+    body: 'לקוח מחפש תור בשעה 23:00. לא מחכה למחר. מאיה קובעת, מאשרת ושולחת תזכורת.',
   },
   {
-    industry: 'סוכן ביטוח / פיננסים',
-    pain: 'ליד חם שלא קיבל מענה בזמן שווה כסף שהלך.',
-    result: 'מאיה מגיבה תוך שניות, אוספת פרטים ומחממת את הליד עד שאתה פנוי לדבר.',
-    quote: '"קמתי בבוקר עם שלושה לידים שמאיה כבר התחילה לטפל בהם. זה לא רגיל."',
-    who: 'יוסי, סוכן ביטוח',
+    title: 'סוכנויות ביטוח',
+    body: 'ליד חם שלא קיבל מענה בזמן שווה כסף שהלך. מאיה מגיבה מיד ומחממת עד שאתה פנוי.',
   },
   {
-    industry: 'מספרה / קוסמטיקה',
-    pain: 'שאלת מחיר שלא נענית בזמן נגמרת אצל מישהו אחר.',
-    result: 'מאיה בודקת את היומן, מזמינה ומאשרת, בלי שתרימי עיניים מהלקוחה שלפניך.',
-    quote: '"היומן מלא. אני לא עושה כלום בשביל זה. זה פשוט קורה."',
-    who: 'שירה, סלון עיצוב שיער',
+    title: 'נדל"ן ותיווך',
+    body: 'פנייה על נכס מגיעה בכל שעה. מאיה אוספת פרטים, מסננת ומעבירה לך רק מה שרלוונטי.',
   },
   {
-    industry: 'קבלן / נותן שירות',
-    pain: 'אם לא ענית מהר, הם כבר עברו לבא בתור.',
-    result: 'מאיה עונה על שאלות, קובעת ביקור ושולחת אישור, בזמן שאתה עובד.',
-    quote: '"אני לא מפספס יותר לקוחות. מאיה מסדרת מי חיכה ומי דחוף."',
-    who: 'רמי, קבלן שיפוצים',
+    title: 'שירותי יופי וקוסמטיקה',
+    body: 'שאלת מחיר שלא נענית בזמן נגמרת אצל מתחרה. מאיה עונה, בודקת זמינות ומזמינה.',
+  },
+  {
+    title: 'קבלנים ונותני שירות',
+    body: 'אתה על גג או מתחת לכיור. מאיה עונה לשאלות, קובעת ביקור ושולחת אישור.',
+  },
+  {
+    title: 'כל עסק עם הרבה פניות',
+    body: 'אם אנשים פונים אליך ואתה לא תמיד יכול לענות מיד, מאיה היא בדיוק בשבילך.',
   },
 ]
 
 export default function UseCases() {
   return (
-    <section id="use-cases" className="section-light py-24">
+    <section id="use-cases" className="section-muted py-24">
       <div className="container-wide">
         <div className="text-center mb-16">
-          <p className="text-brand-600 font-bold text-sm uppercase tracking-widest mb-3">לכל סוג עסק</p>
+          <p className="text-brand-600 font-bold text-sm uppercase tracking-widest mb-3">למי זה מתאים</p>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-4">
             לא משנה מה אתה מוכר.
             <br />
             אם אנשים פונים אליך, זה רלוונטי.
           </h2>
-          <p className="text-gray-500 text-lg">אם אתה עסק שמפסיד לקוחות כשאתה לא זמין, מאיה היא בדיוק בשבילך.</p>
+          <p className="text-gray-500 text-lg max-w-xl mx-auto">
+            מאיה עובדת בכל עסק שיש בו פניות נכנסות שלא תמיד נענות בזמן.
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {cases.map((c) => (
-            <div key={c.industry} className="bg-gray-50 rounded-2xl p-7 border border-gray-100 flex flex-col gap-5">
-              <h3 className="font-black text-gray-900 text-lg">{c.industry}</h3>
-
-              <div className="space-y-3">
-                <div className="flex gap-3">
-                  <span className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <p className="text-gray-600 text-sm">{c.pain}</p>
-                </div>
-
-                <div className="flex gap-3">
-                  <span className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <p className="text-gray-700 text-sm font-medium">{c.result}</p>
-                </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {industries.map((ind) => (
+            <div key={ind.title} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-8 h-8 rounded-lg bg-brand-50 flex items-center justify-center mb-4">
+                <svg className="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
               </div>
-
-              <div className="bg-white rounded-xl p-4 border border-gray-100 mt-auto">
-                <p className="text-gray-700 text-sm italic mb-2">{c.quote}</p>
-                <p className="text-gray-400 text-xs font-semibold">{c.who}</p>
-              </div>
+              <h3 className="font-black text-gray-900 mb-2">{ind.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{ind.body}</p>
             </div>
           ))}
         </div>
