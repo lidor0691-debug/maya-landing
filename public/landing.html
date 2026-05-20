@@ -1817,6 +1817,17 @@
   window.MAYA_WA_Q = "https://wa.me/972524620550?text=" + encodeURIComponent(
     "היי, ראיתי את מאיה ויש לי שאלה"
   );
+  // Per-package CTAs — each pricing button opens WhatsApp with a distinct
+  // message so the lead's chosen plan is identifiable from the first message.
+  window.MAYA_WA_STARTER = "https://wa.me/972524620550?text=" + encodeURIComponent(
+    "היי לידור, ראיתי את חבילת Starter של מאיה ורוצה לבדוק אם היא מתאימה לקליניקה שלי."
+  );
+  window.MAYA_WA_GROWTH = "https://wa.me/972524620550?text=" + encodeURIComponent(
+    "היי לידור, ראיתי את חבילת Growth של מאיה ורוצה להבין איך היא יכולה לעזור לנו עם לידים ופולואפים."
+  );
+  window.MAYA_WA_PRO = "https://wa.me/972524620550?text=" + encodeURIComponent(
+    "היי לידור, ראיתי את חבילת Pro של מאיה ורוצה לבדוק התאמה למערכת מלאה לקליניקה."
+  );
 </script>
 
 <!-- ─────────────── Topbar ─────────────── -->
@@ -2276,7 +2287,7 @@
           <li>פאנל ניהול בסיסי</li>
           <li>הגדרה לפי הצוות שלך</li>
         </ul>
-        <a class="btn btn-secondary on-cream tier-cta" href="#" data-wa>מתחילים עם Starter</a>
+        <a class="btn btn-secondary on-cream tier-cta" href="#" data-wa-plan="starter">מתחילים עם Starter</a>
       </article>
 
       <article class="tier featured">
@@ -2295,7 +2306,7 @@
           <li>דוחות שבועיים</li>
           <li>התאמות לתהליך המכירה בקליניקה</li>
         </ul>
-        <a class="btn btn-primary on-cream tier-cta" href="#" data-wa>מתחילים עם Growth</a>
+        <a class="btn btn-primary on-cream tier-cta" href="#" data-wa-plan="growth">מתחילים עם Growth</a>
       </article>
 
       <article class="tier">
@@ -2314,7 +2325,7 @@
           <li>התאמות מיוחדות לפי העסק</li>
           <li>תמיכה וליווי מורחבים</li>
         </ul>
-        <a class="btn btn-secondary on-cream tier-cta" href="#" data-wa>דברו איתנו על Pro</a>
+        <a class="btn btn-secondary on-cream tier-cta" href="#" data-wa-plan="pro">דברו איתנו על Pro</a>
       </article>
 
     </div>
@@ -2757,6 +2768,16 @@
 <script>
   document.querySelectorAll('[data-wa]').forEach(el => {
     el.href = window.MAYA_WA;
+    el.target = '_blank';
+    el.rel = 'noopener';
+  });
+  const PLAN_WA = {
+    starter: window.MAYA_WA_STARTER,
+    growth:  window.MAYA_WA_GROWTH,
+    pro:     window.MAYA_WA_PRO,
+  };
+  document.querySelectorAll('[data-wa-plan]').forEach(el => {
+    el.href = PLAN_WA[el.getAttribute('data-wa-plan')] || window.MAYA_WA;
     el.target = '_blank';
     el.rel = 'noopener';
   });
