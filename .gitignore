@@ -1,1 +1,4 @@
 node_modules
+
+# Demo video hosted externally — never commit (GitHub 100MB limit)
+public/videos/
